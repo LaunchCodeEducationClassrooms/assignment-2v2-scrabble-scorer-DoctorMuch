@@ -93,9 +93,9 @@ const scoringAlgorithms = [simpleScore, vowelBonusScore, scrabbleScore];
 function scorerPrompt() {
   let scorerChoice = input.question(`Which scorer would you like to use?
   
-0 - Simple: One point per character
-1 - Vowel Bonus: Vowels are worth 3 points
-2 - Scrabble: Uses scrabble point system
+0 - ${scoringAlgorithms[0].name}: ${scoringAlgorithms[0].description}
+1 - ${scoringAlgorithms[1].name}: ${scoringAlgorithms[1].description}
+2 - ${scoringAlgorithms[2].name}: ${scoringAlgorithms[2].description}
 Enter 0, 1, or 2: `);
   scorerChoice = Number(scorerChoice);
 
